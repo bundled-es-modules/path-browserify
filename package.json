@@ -1,6 +1,6 @@
 {
   "name": "@bundled-es-modules/path-browserify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mirror of path-browserify, bundled and exposed as ES module",
   "author": "Joren Broekema <joren.broekema@gmail.com>",
   "main": "index-esm.js",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "node dev.js",
-    "build": "esbuild source.js --bundle --format=esm --outfile=index-esm.js"
+    "build": "esbuild source.js --bundle --format=esm --outfile=index-esm.js && node manual-adjust-esm.js"
   },
   "keywords": [],
   "files": [
